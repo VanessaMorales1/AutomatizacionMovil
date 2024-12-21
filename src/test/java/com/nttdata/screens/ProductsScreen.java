@@ -16,7 +16,7 @@ public class ProductsScreen extends PageObject {
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"Sauce Labs Fleece Jacket\"]")
     private WebElement clicImgProd;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc]")
-    private List<WebElement> productos; // Lista de todos los productos
+    private List<WebElement> productos;
 
     public boolean isProductDisplayed() {
         waitFor(ExpectedConditions.visibilityOf(lblProduct));

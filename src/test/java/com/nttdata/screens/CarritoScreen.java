@@ -15,14 +15,14 @@ public class CarritoScreen extends PageObject {
 
 
     public void enterCantidad(int cantidad) {
-        waitFor(ExpectedConditions.visibilityOf(cant)); // Asegúrate de que el botón sea visible.
+        waitFor(ExpectedConditions.visibilityOf(cant));
         for (int i = 1; i < cantidad; i++) {
-            cant.click(); // Haz clic en el botón.
+            cant.click();
         }
     }
 
     public void agregarCarrito() {
-        waitFor(ExpectedConditions.visibilityOf(btnAgregar)); // Asegúrate de que el botón sea visible.
+        waitFor(ExpectedConditions.visibilityOf(btnAgregar));
         btnAgregar.click();
     }
 

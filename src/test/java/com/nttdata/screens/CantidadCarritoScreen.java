@@ -11,9 +11,9 @@ public class CantidadCarritoScreen extends PageObject {
     private WebElement cantCarrito;
 
     public void validarCarrito(int numero) {
-        waitFor(ExpectedConditions.visibilityOf(cantCarrito)); // Espera a que el elemento sea visible.
+        waitFor(ExpectedConditions.visibilityOf(cantCarrito));
         cantCarrito.getText();
-        String textoCarrito = cantCarrito.getText().replace(" Items", ""); // Elimina " Items" del texto.
+        String textoCarrito = cantCarrito.getText().replace(" Items", "");
         int cantidadActual = Integer.parseInt(textoCarrito);
         Assert.assertEquals(numero, cantidadActual);
 
